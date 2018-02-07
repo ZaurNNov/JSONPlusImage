@@ -12,6 +12,8 @@
 		CE03E4C6202B422400E6534C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03E4C4202B422400E6534C /* Main.storyboard */; };
 		CE03E4C8202B422400E6534C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE03E4C7202B422400E6534C /* Assets.xcassets */; };
 		CE03E4CB202B422400E6534C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03E4C9202B422400E6534C /* LaunchScreen.storyboard */; };
+		CE03E4D3202B45A000E6534C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E4D2202B45A000E6534C /* DetailViewController.swift */; };
+		CE03E4D5202B46B100E6534C /* jsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E4D4202B46B100E6534C /* jsonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CE03E4C7202B422400E6534C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE03E4CA202B422400E6534C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE03E4CC202B422400E6534C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE03E4D2202B45A000E6534C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE03E4D4202B46B100E6534C /* jsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				CE03E4C0202B422400E6534C /* AppDelegate.swift */,
 				CE03E4C2202B422400E6534C /* ViewController.swift */,
+				CE03E4D2202B45A000E6534C /* DetailViewController.swift */,
 				CE03E4C4202B422400E6534C /* Main.storyboard */,
 				CE03E4C7202B422400E6534C /* Assets.xcassets */,
 				CE03E4C9202B422400E6534C /* LaunchScreen.storyboard */,
 				CE03E4CC202B422400E6534C /* Info.plist */,
+				CE03E4D4202B46B100E6534C /* jsonData.swift */,
 			);
 			path = JSONPlusImage;
 			sourceTree = "<group>";
@@ -96,7 +102,7 @@
 				TargetAttributes = {
 					CE03E4BC202B422400E6534C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE03E4D3202B45A000E6534C /* DetailViewController.swift in Sources */,
+				CE03E4D5202B46B100E6534C /* jsonData.swift in Sources */,
 				CE03E4C3202B422400E6534C /* ViewController.swift in Sources */,
 				CE03E4C1202B422400E6534C /* AppDelegate.swift in Sources */,
 			);
@@ -274,14 +282,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6KH9QMZY4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JSONPlusImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = StudyTest.JSONPlusImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,14 +298,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6KH9QMZY4;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JSONPlusImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = StudyTest.JSONPlusImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
