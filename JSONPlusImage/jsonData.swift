@@ -15,9 +15,6 @@ struct JSONData: Decodable {
     let capital: String
     let population: Int?
     let flag: String
-    
-    
-
 }
 
 extension UIImageView {
@@ -44,12 +41,10 @@ extension UIImageView {
     }
 }
 
-
-
 extension String {
     
     func emojiToImage() -> UIImage? {
-        let size = CGSize(width: 30, height: 35)
+        let size = CGSize(width: 50, height: 60)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         UIColor.white.set()
         let rect = CGRect(origin: CGPoint(), size: size)
